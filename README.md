@@ -25,7 +25,7 @@ See RailsCasts [#323 Backbone on Rails Part 1](http://railscasts.com/episodes/32
 
 ## Production
 
-Make a temporarily change to `config/environments/production.rb` in the follow line:
+Make a temporarily change to `config/environments/production.rb` in the following line:
 
 ```ruby
   config.serve_static_assets = true
