@@ -22,3 +22,17 @@ See RailsCasts [#323 Backbone on Rails Part 1](http://railscasts.com/episodes/32
     rake db:migrate
     rake db:seed
     rails s
+
+## Production
+
+Make a temporarily change to `config/environments/production.rb` in the follow line:
+
+```ruby
+  config.serve_static_assets = true
+```
+
+Then run the following commands:
+
+    RAILS_ENV=production bundle exec rake db:migrate
+    RAILS_ENV=production bundle exec rake db:seed
+    RAILS_ENV=production bundle exec rails s
